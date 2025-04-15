@@ -126,4 +126,11 @@ html,
 body {
   height: 100%;
   margin: 0;
+  overflow-x: hidden;
+}
+
+body.menu-active {
+  overflow: hidden; /* Disable scrolling */
+  position: fixed; /* Prevent the page from shifting */
+  width: 100%; /* Ensure layout consistency */
 }
