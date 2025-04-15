@@ -46,24 +46,24 @@ export default function MobileMenu() {
         </Button>
       </div>
       <nav
-        className={`fixed top-0 right-0 w-screen h-screen bg-[rgba(190,_219,_255,_0.99)] dark:bg-gray-800 transition-all duration-250 ease-in-out ${
+        className={`fixed top-0 right-0 w-screen h-screen bg-[rgba(190,_219,_255,_0.99)] dark:bg-gray-800 transition-all duration-250 ease-in-out  ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="mb-4 px-4 py-3 flex items-center justify-between">
+        <div className="px-4 py-3 flex items-center justify-between container mx-auto">
           <Logo />
           <Button variant="outline" size="icon" onClick={toggleMenu}>
             <XIcon />
           </Button>
         </div>
         <div className="h-px w-full bg-gray-500 mt-4"></div>
-        <ul className="px-6 mt-8 space-y-4">
+        <ul className="px-6 mt-12 space-y-4 text-center">
           {menuItems.map((item, index) => (
             <li key={item.label}>
               <Link
                 target={item.newTab ? "_blank" : "_self"}
                 href={item.href}
-                className={`py-4 text-3xl inline-flex transition-transform duration-250 ease-linear font-bold items-baseline gap-2 ${
+                className={`py-4 text-3xl inline-flex transition-transform duration-250 ease-linear font-bold items-baseline gap-4 ${
                   isOpen ? "translate-x-0" : "translate-x-full"
                 }`}
                 style={{ transitionDelay: `${index * 100}ms` }}

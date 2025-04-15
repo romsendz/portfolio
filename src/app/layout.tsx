@@ -46,7 +46,7 @@ export default function RootLayout({
         >
           <WavesBackground />
           <Header />
-          <main className=" flex-1">{children}</main>
+          <main className="flex-1 z-[1] mt-8 lg:mt-16">{children}</main>
           <Footer />
         </ThemeProvider>
       </body>

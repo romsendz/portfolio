@@ -3,7 +3,7 @@ import { SocialIcon } from "react-social-icons";
 export default function Footer() {
   const date = new Date();
   return (
-    <footer className="flex justify-between items-center z-10 p-4 shadow-lg backdrop-filter backdrop-blur-[5px]">
+    <footer className="flex justify-between items-center p-4 shadow-lg backdrop-filter backdrop-blur-[5px] fixed bottom-0 left-0 right-0 z-10">
       <span className="text-sm text-gray-400">{`© ${date.getFullYear()} Roman Sendziuk`}</span>
       <div className="flex justify-end items-center space-x-4">
         <SocialIcon
