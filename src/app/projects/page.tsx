@@ -12,8 +12,7 @@ const projects = [
     description: (
       <>
         <p>
-          A simple, but modern and visually appealing landing page for a company
-          in the beauty industry.
+          A simple, but cool landing page for a company in the beauty industry.
         </p>
         <br />
         <p>
@@ -25,7 +24,7 @@ const projects = [
     ),
     link: `https://romsendz.github.io/beauty-zone`,
     archived: false,
-    img: `/beauty-zone.png`,
+    img: `/beauty-zone.jpg`,
     technologies: [
       "HTML",
       "JavaScript",
@@ -79,7 +78,7 @@ const projects = [
     ),
     link: `https://ugcc-pokrov.te.ua`,
     archived: false,
-    img: `/ugcc-pokrov-v2.png`,
+    img: `/ugcc-pokrov-v2.jpg`,
     technologies: [
       `React`,
       `Next.js`,
@@ -144,7 +143,7 @@ const projects = [
     ),
     link: `https://hp-world.vercel.app/`,
     archived: false,
-    img: `/hp-world.png`,
+    img: `/hp-world.jpg`,
     technologies: [
       `React`,
       `TypeScript`,
@@ -196,7 +195,7 @@ const projects = [
     ),
     link: `https://church-website-eta.vercel.app/`,
     archived: true,
-    img: `/ugcc-pokrov-v1.png`,
+    img: `/ugcc-pokrov-v1.jpg`,
     technologies: [
       "Next.js",
       "React",
