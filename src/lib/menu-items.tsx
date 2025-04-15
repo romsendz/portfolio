@@ -2,7 +2,7 @@ import {
   BookUserIcon,
   BriefcaseBusinessIcon,
   HomeIcon,
-  SmileIcon,
+  // SmileIcon,
 } from "lucide-react";
 
 interface MenuItem {
@@ -43,13 +43,13 @@ export const menuItems: MenuItem[] = [
     iconColor: "text-red-500",
     newTab: true,
   },
-  {
-    icon: <SmileIcon className="h-5 w-5" />,
-    label: "About me",
-    href: "/about",
-    gradient:
-      "radial-gradient(circle, rgba(249,115,22,0.15) 0%, rgba(234,88,12,0.06) 50%, rgba(194,65,12,0) 100%)",
-    iconColor: "text-orange-500",
-    newTab: false,
-  },
+  // {
+  //   icon: <SmileIcon className="h-5 w-5" />,
+  //   label: "About me",
+  //   href: "/about",
+  //   gradient:
+  //     "radial-gradient(circle, rgba(249,115,22,0.15) 0%, rgba(234,88,12,0.06) 50%, rgba(194,65,12,0) 100%)",
+  //   iconColor: "text-orange-500",
+  //   newTab: false,
+  // },
 ];
