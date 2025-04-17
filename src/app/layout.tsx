@@ -4,7 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
-//import WavesBackground from "@/components/waves-background";
+import WavesBackground from "@/components/waves-background";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -45,7 +45,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <div className="flex min-h-screen flex-col">
-            {/* <WavesBackground /> */}
+            <WavesBackground />
             <Header />
             <main className="flex flex-1 z-[1] mt-8 lg:mt-16">{children}</main>
             <Footer />
