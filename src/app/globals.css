@@ -122,16 +122,12 @@
   }
 }
 
-html,
 body {
-  height: 100%;
   margin: 0;
-  scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 body.menu-active {
   overflow: hidden; /* Disable scrolling */
-  position: fixed; /* Prevent the page from shifting */
+  position: fixed;
   width: 100%; /* Ensure layout consistency */
 }

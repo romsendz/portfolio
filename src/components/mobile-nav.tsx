@@ -6,6 +6,7 @@ import { Button } from "./ui/button";
 import Logo from "./logo";
 import { menuItems } from "@/lib/menu-items";
 import Link from "next/link";
+import clsx from "clsx";
 
 export default function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false);
@@ -46,9 +47,12 @@ export default function MobileMenu() {
         </Button>
       </div>
       <nav
-        className={`fixed top-0 right-0 w-screen h-screen bg-[rgba(190,_219,_255,_0.99)] dark:bg-gray-800 transition-all duration-250 ease-in-out  ${
-          isOpen ? "translate-x-0" : "translate-x-full"
-        }`}
+        className={clsx(
+          "fixed top-0 right-[-100vw] w-screen h-[100dvh] bg-[rgba(190,_219,_255,_0.99)] dark:bg-gray-800 transition-all duration-250 ease-in-out lg:hidden",
+          {
+            ["translate-x-[-100vw]"]: isOpen,
+          }
+        )}
       >
         <div className="px-4 py-3 flex items-center justify-between container mx-auto">
           <Logo />
