@@ -25,12 +25,15 @@ export default function MobileMenu() {
   // disable scroll on body when menu is opened
   useEffect(() => {
     if (isOpen) {
+      document.querySelector("header")?.classList.remove("overflow-x-hidden");
       document.body.classList.add("menu-active");
     } else {
       document.body.classList.remove("menu-active");
+      document.querySelector("header")?.classList.add("overflow-x-hidden");
     }
     return () => {
       document.body.classList.remove("menu-active");
+      document.querySelector("header")?.classList.remove("overflow-x-hidden");
     };
   }, [isOpen]);
 
@@ -67,7 +70,7 @@ export default function MobileMenu() {
               <Link
                 target={item.newTab ? "_blank" : "_self"}
                 href={item.href}
-                className={`py-4 text-3xl inline-flex transition-transform duration-250 ease-linear font-bold items-baseline gap-4 ${
+                className={`py-4 text-3xl inline-flex transition-all duration-250 ease-linear font-bold items-baseline gap-4 ${
                   isOpen ? "translate-x-0" : "translate-x-full"
                 }`}
                 style={{ transitionDelay: `${index * 100}ms` }}
