@@ -47,7 +47,7 @@ export default function RootLayout({
           <div className="flex min-h-screen flex-col">
             {/* <WavesBackground /> */}
             <Header />
-            <main className="flex-1 z-[1] mt-8 lg:mt-16">{children}</main>
+            <main className="flex flex-1 z-[1] mt-8 lg:mt-16">{children}</main>
             <Footer />
           </div>
         </ThemeProvider>

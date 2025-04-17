@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="h-full w-full flex items-center justify-center">
+    <div className="flex items-center justify-center m-auto">
       <Card className="container mx-12 flex flex-col justify-center items-center bg-transparent backdrop-filter backdrop-blur-[25px] [box-shadow:0_0_0.2rem_#fff,_0_0_.2rem_#fff,_0_0_1rem_#8ec5ff,_0_0_0.2rem_#8ec5ff,_0_0_.5rem_#8ec5ff,_inset_0_0_.5rem_#8ec5ff]">
         <CardContent>
           <div className="text-center font-audiowide">ROMAN SENDZIUK</div>
