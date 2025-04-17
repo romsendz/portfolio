@@ -28,7 +28,7 @@ export default function Home() {
               maxCursorMove={120}
               xGap={12}
               yGap={36}
-              style={{ filter: `blur(5px)` }}
+              style={{ filter: `blur(2px)` }}
             />
             <RotatingText
               texts={[

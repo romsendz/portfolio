@@ -28,7 +28,7 @@ const WavesBackground = () => {
       maxCursorMove={120}
       xGap={12}
       yGap={36}
-      style={{ filter: `blur(${theme === "light" ? "2" : "25"}px)` }}
+      style={{ filter: `blur(${theme === "light" ? "2" : "5"}px)` }}
     />
   );
 };
