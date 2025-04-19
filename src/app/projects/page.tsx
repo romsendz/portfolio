@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { PROJECTS } from "@/lib/PROJECTS";
 import clsx from "clsx";
-import { ExternalLinkIcon, MonitorIcon } from "lucide-react";
+import { MonitorIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -16,7 +16,7 @@ const Page = () => {
             id={project.title}
             key={project.title}
             className={clsx(
-              "flex backdrop-filter text-center lg:text-start backdrop-blur-[100px] flex-col lg:flex-row w-full px-4 py-6 lg:px-8 lg:py-12 bg-transparent gap-4 lg:gap-12 relative hover:opacity-100 transition-all duration-200",
+              "flex backdrop-filter text-center lg:text-start lg:border-gray-500 backdrop-blur-[100px] flex-col lg:flex-row w-full px-4 py-6 lg:px-8 lg:py-12 bg-transparent gap-4 lg:gap-12 relative hover:opacity-100 transition-all duration-200",
               { ["opacity-50"]: project.archived }
             )}
             spotlightColor="rgba(168, 141, 235, 0.14)"
@@ -33,7 +33,7 @@ const Page = () => {
             </div>
             <div className="flex flex-col justify-between gap-2 lg:gap-4 grow-1">
               <div>
-                <h2 className="text-xl lg:text-2xl font-bold">
+                <h2 className="text-xl lg:text-2xl font-audiowide tracking-widest">
                   {project.title}
                 </h2>
                 <hr className="my-2" />

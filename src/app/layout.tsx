@@ -36,7 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${audiowide.variable} antialiased relative`}
+        className={`${geistSans.variable} ${geistMono.variable} ${audiowide.variable} antialiased`}
       >
         <ThemeProvider
           attribute="class"
@@ -44,8 +44,8 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <WavesBackground />
-          <div className="flex min-h-screen flex-col">
+          <div className="flex min-h-screen flex-col relative">
+            <WavesBackground />
             <Header />
             <main className="flex flex-1 z-[1] mt-8 lg:mt-16">{children}</main>
             <Footer />

@@ -8,7 +8,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="flex items-start mt-8 lg:mt-0 lg:items-center mx-auto">
-      <Card className="container mx-8 flex flex-col justify-center items-center bg-transparent backdrop-filter backdrop-blur-[25px] [box-shadow:0_0_0.2rem_#fff,_0_0_.2rem_#fff,_0_0_1rem_#8ec5ff,_0_0_0.2rem_#8ec5ff,_0_0_.5rem_#8ec5ff,_inset_0_0_.5rem_#8ec5ff]">
+      <Card className="container mx-8 gap-4 lg:gap-6 flex flex-col justify-center items-center bg-transparent backdrop-filter backdrop-blur-[25px] [box-shadow:0_0_0.2rem_#fff,_0_0_.2rem_#fff,_0_0_1rem_#8ec5ff,_0_0_0.2rem_#8ec5ff,_0_0_.5rem_#8ec5ff,_inset_0_0_.5rem_#8ec5ff]">
         <CardContent>
           <div className="text-center text-sm lg:text-base font-audiowide">
             ROMAN SENDZIUK
@@ -39,7 +39,7 @@ export default function Home() {
                 "Web",
                 "🖤     ❤️     💛",
                 "Fullstack",
-                "❤️     ❤️     ❤️",
+                "   ",
               ]}
               mainClassName="px-2 sm:px-2 md:px-3 bg-transparent text-black overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg font-audiowide text-md sm:text-2xl md:text-xl font-bold"
               staggerFrom={"last"}
@@ -53,13 +53,12 @@ export default function Home() {
             />
           </div>
 
-          <p className="text-center mt-12 font-audiowide">
-            I turn passion and coffee into code.
-          </p>
-          <p className="text-center font-audiowide">
+          <p className="text-center text-sm lg:text-base mt-6 lg:mt-12 font-audiowide">
+            I turn passion and coffee into code. <br />
             When I&apos;m not crafting frontend, you&apos;ll find me debugging
             life itself.
           </p>
+          <p className="text-center font-audiowide"></p>
         </CardContent>
         <hr className="h-2 w-[75%]" />
         <CardFooter className="space-x-8">
