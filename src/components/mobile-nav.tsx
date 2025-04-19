@@ -25,15 +25,15 @@ export default function MobileMenu() {
   // disable scroll on body when menu is opened
   useEffect(() => {
     if (isOpen) {
-      document.querySelector("header")?.classList.remove("overflow-x-hidden");
+      document.querySelector("header")?.classList.remove("overflow-hidden");
       document.body.classList.add("menu-active");
     } else {
       document.body.classList.remove("menu-active");
-      document.querySelector("header")?.classList.add("overflow-x-hidden");
+      document.querySelector("header")?.classList.add("overflow-hidden");
     }
     return () => {
       document.body.classList.remove("menu-active");
-      document.querySelector("header")?.classList.remove("overflow-x-hidden");
+      document.querySelector("header")?.classList.remove("overflow-hidden");
     };
   }, [isOpen]);
 
@@ -51,7 +51,7 @@ export default function MobileMenu() {
       </div>
       <nav
         className={clsx(
-          "fixed top-0 right-[-100vw] w-screen h-[100dvh] bg-[rgba(190,_219,_255,_0.99)] dark:bg-gray-800 transition-all duration-250 ease-in-out lg:hidden",
+          "fixed top-0 right-[-100vw] w-screen h-[100dvh] bg-[rgba(190,_219,_255,_0.99)] dark:bg-gray-800 transition-all duration-250 ease-in-out lg:hidden z-10",
           {
             ["translate-x-[-100vw]"]: isOpen,
           }
