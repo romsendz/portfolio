@@ -7,6 +7,7 @@ import Logo from "./logo";
 import { menuItems } from "@/lib/menu-items";
 import Link from "next/link";
 import clsx from "clsx";
+import { SocialIcon } from "react-social-icons";
 
 export default function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false);
@@ -57,13 +58,12 @@ export default function MobileMenu() {
           }
         )}
       >
-        <div className="px-4 py-3 flex items-center justify-between container mx-auto">
+        <div className="px-4 py-3 flex items-center justify-between container mx-auto border-b border-gray-700 dark:border-gray-300">
           <Logo />
           <Button variant="outline" size="icon" onClick={toggleMenu}>
             <XIcon />
           </Button>
         </div>
-        <div className="h-px w-full bg-gray-500 mt-4"></div>
         <ul className="px-6 mt-12 space-y-4 text-center">
           {menuItems.map((item, index) => (
             <li key={item.label}>
@@ -81,6 +81,40 @@ export default function MobileMenu() {
             </li>
           ))}
         </ul>
+        <div className="flex justify-center items-center space-x-8 mt-32">
+          <SocialIcon
+            title="LinkedIn"
+            url="https://www.linkedin.com/in/roman-sendziuk/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ height: "3rem", width: "3rem" }}
+            className="hover:scale-125 transition-all duration-200 hover:filter hover:brightness-125"
+          />
+          <SocialIcon
+            title="GitHub"
+            url="https://github.com/romsendz"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ height: "3rem", width: "3rem" }}
+            className="hover:scale-125 transition-all duration-200 hover:filter hover:brightness-125"
+          />
+          <SocialIcon
+            title="Facebook"
+            url="https://www.facebook.com/roman.sendziuk"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ height: "3rem", width: "3rem" }}
+            className="hover:scale-125 transition-all duration-200 hover:filter hover:brightness-125"
+          />
+          <SocialIcon
+            title="Email"
+            url="mailto:sendzyuk.r@gmail.com,sendzyuk.r@ukr.net"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ height: "3rem", width: "3rem" }}
+            className="hover:scale-125 transition-all duration-200 hover:filter hover:brightness-125"
+          />
+        </div>
       </nav>
     </div>
   );
