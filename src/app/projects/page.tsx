@@ -12,7 +12,8 @@ const projects = [
     description: (
       <>
         <p>
-          A simple, but cool landing page for a company in the beauty industry.
+          A simple, but reasonable landing page for a company in the beauty
+          industry.
         </p>
         <br />
         <p>
@@ -128,15 +129,13 @@ const projects = [
         <p>
           Includes pages for exploring books, characters, houses, and spells
           from the Harry Potter universe, with data fetched dynamically from an
-          external API. Built with React and TypeScript for reusable, modular,
-          and type-safe components. Powered by React Query for efficient data
-          fetching, caching, and synchronization.
+          external API. Powered by React Query for efficient data fetching,
+          caching, and synchronization.
         </p>
         <br />
         <p>
           The goal of this project was to play around with status-quo tools and
-          features while building a functional and visually appealing React
-          application. It served as a playground to explore different tools and
+          features. It served as a playground to explore different tools and
           approaches.
         </p>
       </>
@@ -211,14 +210,14 @@ const projects = [
 
 const Page = () => {
   return (
-    <div className="flex container flex-col items-center space-y-8 my-16 mx-auto px-8">
+    <div className="flex container flex-col items-center space-y-8 mt-4 lg:mt-8 mb-4 mx-auto px-8">
       {projects.map((project) => {
         return (
           <SpotlightCard
             id={project.title}
             key={project.title}
             className={clsx(
-              "flex backdrop-filter text-center lg:text-start backdrop-blur-[100px] flex-col lg:flex-row w-full px-8 py-12 bg-transparent gap-12 relative hover:opacity-100 transition-all duration-200",
+              "flex backdrop-filter text-center lg:text-start backdrop-blur-[100px] flex-col lg:flex-row w-full px-4 py-6 lg:px-8 lg:py-12 bg-transparent gap-4 lg:gap-12 relative hover:opacity-100 transition-all duration-200",
               { ["opacity-50"]: project.archived }
             )}
             spotlightColor="rgba(168, 141, 235, 0.14)"
@@ -228,24 +227,23 @@ const Page = () => {
                 src={project.img}
                 alt={`preview: ${project.title}`}
                 priority
-                height={400}
-                width={400}
-                className="hover:scale-110 transition-all duration-200 rounded-2xl"
+                height={200}
+                width={200}
+                className="hover:scale-105 transition-all duration-200 rounded-2xl max-w-[200px] max-h-[200px] lg:max-w-[300px] lg:max-h-[300px] object-contain w-full h-auto"
               />
             </div>
-            <div className="flex flex-col justify-between gap-8 grow-1">
+            <div className="flex flex-col justify-between gap-2 lg:gap-4 grow-1">
               <div>
-                <h2 className="text-3xl font-bold">{project.title}</h2>
-                <br />
-                <hr />
-                <br />
-
-                {project.description}
+                <h2 className="text-xl lg:text-2xl font-bold">
+                  {project.title}
+                </h2>
+                <hr className="my-2" />
+                <div className="text-sm">{project.description}</div>
               </div>
 
-              <div className="gap-2 flex flex-wrap mt-4 ">
+              <div className="gap-2 flex flex-wrap mt-4 justify-center lg:justify-start">
                 {project.technologies.map((tech) => (
-                  <Badge variant="outline" className="text-md" key={tech}>
+                  <Badge variant="outline" className="text-xs" key={tech}>
                     {tech}
                   </Badge>
                 ))}
@@ -274,7 +272,7 @@ const Page = () => {
             <Button
               asChild
               title={project.archived ? "Preview (archived)" : "Preview"}
-              className="block lg:hidden"
+              className="block lg:hidden mt-4"
             >
               <Link
                 target="_blank"

@@ -35,9 +35,9 @@ export default function Home() {
             <RotatingText
               texts={[
                 "Frontend",
-                "❤️     ❤️     ❤️",
+                "💙     💛     💙",
                 "Web",
-                "❤️     ❤️     ❤️",
+                "🖤     ❤️     💛",
                 "Fullstack",
                 "❤️     ❤️     ❤️",
               ]}

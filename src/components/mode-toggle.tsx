@@ -10,6 +10,7 @@ export function ModeToggle() {
   const { setTheme, theme } = useTheme();
   return (
     <Button
+      className="ml-auto mr-4 lg:ml-0 lg:mr-0"
       variant="ghost"
       size="icon"
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
