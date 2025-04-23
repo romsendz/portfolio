@@ -89,6 +89,7 @@ export const PROJECTS = [
       `React Hook Form`,
       `Zod`,
       `Rest API`,
+      `Quill JS`,
       `Responsive Design`,
       `CSR`,
       `SSR`,
