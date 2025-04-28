@@ -61,7 +61,7 @@ export function MenuBar() {
               <Link
                 href={item.href}
                 target={item.newTab ? "_blank" : "_self"}
-                className={`flex items-center gap-2 px-4 py-2 relative z-10 transition-all rounded-xl ${
+                className={`flex items-center gap-2 px-4 py-2 text-sm relative z-10 transition-all rounded-xl ${
                   pathname === item.href
                     ? "text-foreground"
                     : "text-muted-foreground group-hover:text-foreground"
