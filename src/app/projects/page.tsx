@@ -9,7 +9,7 @@ import Link from "next/link";
 
 const Page = () => {
   return (
-    <div className="flex container flex-col items-center space-y-8 mt-4 lg:mt-8 mb-4 mx-auto px-8">
+    <div className="flex container flex-col items-center space-y-8 mt-8 lg:mt-16 mb-4 mx-auto px-8">
       {PROJECTS.map((project) => {
         return (
           <SpotlightCard

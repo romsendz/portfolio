@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex items-start mt-8 lg:mt-0 lg:items-center mx-auto">
+    <div className="flex items-start mt-16 lg:items-center mx-auto">
       <Card className="container mx-8 gap-4 lg:gap-6 flex flex-col justify-center items-center bg-transparent backdrop-filter backdrop-blur-[25px] [box-shadow:0_0_0.2rem_#fff,_0_0_.2rem_#fff,_0_0_1rem_#8ec5ff,_0_0_0.2rem_#8ec5ff,_0_0_.5rem_#8ec5ff,_inset_0_0_.5rem_#8ec5ff]">
         <CardContent>
           <div className="text-center text-xs lg:text-base font-audiowide">
