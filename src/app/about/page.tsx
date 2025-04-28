@@ -1,7 +1,28 @@
+import Celebration from "@/components/celebration";
+import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import {
+  Dialog,
+  DialogClose,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 import { ArrowRight, ExternalLinkIcon, EyeIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { SocialIcon } from "react-social-icons";
+
 const Page = () => {
   return (
     <div className="grid lg:grid-cols-[repeat(4,_1fr)] lg:grid-rows-[repeat(8,_1fr)] gap-4 mx-[10%] w-full h-auto mt-8 mb-8 justify-items-center lg:justify-items-normal">
@@ -241,6 +262,124 @@ const Page = () => {
             let&apos;s <Celebration />
           </p>
         </CardContent>
+      </Card>
+      <Card className="lg:[grid-area:5_/_1_/_9_/_2] backdrop-blur-xl hover:border-amber-500 dark:hover:border-blue-500 border-2 transition-all text-center lg:text-start">
+        <CardHeader className="text-2xl">Contact me!</CardHeader>
+        <CardContent className="space-y-4">
+          <div className="flex flex-col space-y-1">
+            <span className="italic text-gray-500">email</span>
+            <Link href="mailto:sendzyuk.r@gmail.com">sendzyuk.r@gmail.com</Link>
+          </div>
+          <div className="flex flex-col space-y-2">
+            <span className="italic text-gray-500">socials</span>
+            <div className="flex items-center space-x-4">
+              <SocialIcon
+                title="LinkedIn"
+                url="https://www.linkedin.com/in/roman-sendziuk/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ height: "2rem", width: "2rem" }}
+                className="hover:scale-125 transition-all duration-200 hover:filter hover:brightness-125"
+              />
+              <SocialIcon
+                title="GitHub"
+                url="https://github.com/romsendz"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ height: "2rem", width: "2rem" }}
+                className="hover:scale-125 transition-all duration-200 hover:filter hover:brightness-125"
+              />
+              <SocialIcon
+                title="Facebook"
+                url="https://www.facebook.com/roman.sendziuk"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ height: "2rem", width: "2rem" }}
+                className="hover:scale-125 transition-all duration-200 hover:filter hover:brightness-125"
+              />
+              <SocialIcon
+                title="Email"
+                url="mailto:sendzyuk.r@gmail.com,sendzyuk.r@ukr.net"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ height: "2rem", width: "2rem" }}
+                className="hover:scale-125 transition-all duration-200 hover:filter hover:brightness-125"
+              />
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+      <Card className="lg:[grid-area:5_/_2_/_7_/_3] backdrop-blur-xl hover:border-amber-500 dark:hover:border-blue-500 border-2 transition-all lg:hidden">
+        {/*WIP - remove lg:hidden*/}
+      </Card>
+      <Card className="lg:[grid-area:7_/_2_/_9_/_3] backdrop-blur-xl hover:border-amber-500 dark:hover:border-blue-500 border-2 transition-all relative ">
+        <CardHeader className="text-2xl inline text-center lg:text-start">
+          What&apos;s up{" "}
+          <Link
+            href={`https://sive.rs/nowff`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-red-600 hover:underline"
+          >
+            now
+          </Link>
+          ?
+        </CardHeader>
+        <CardContent>
+          <ul className="list-disc list-inside text-sm">
+            <li>Working on some personal projects</li>
+            {/* <li>Starting a new ft job soon</li> */}
+            <li>Learning German language (A2)</li>
+            <li>Open for new opportunities</li>
+          </ul>
+        </CardContent>
+        <span className="absolute inline-flex h-3 w-3 top-4 right-4 animate-ping rounded-full bg-red-600" />
+      </Card>
+      <Card className="lg:[grid-area:5_/_3_/_6_/_4] backdrop-blur-xl hover:border-amber-500 dark:hover:border-blue-500 border-2 transition-all lg:hidden">
+        {/*WIP - remove lg:hidden*/}
+      </Card>
+      <Card className="lg:[grid-area:6_/_3_/_7_/_4] backdrop-blur-xl hover:border-amber-500 dark:hover:border-blue-500 border-2 transition-all relative hover:scale-105 lg:py-0 flex items-center justify-center hidden">
+        {/*WIP - remove lg:hidden*/}
+        <Link
+          href={
+            "https://music.youtube.com/playlist?list=PL13xdb4Vgmv8zMvNXSI0tHed-SQVxJ3uw&si=roMANxDfQuBrWwdG"
+          }
+          className="px-2 z-1 flex items-center justify-center text-gray-100 gap-2 w-full h-full"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span className="text-xl">Favourite movies</span>
+          <ExternalLinkIcon />
+        </Link>
+        <Image
+          alt={`music/playlist`}
+          priority
+          height={200}
+          width={200}
+          src={"/movie-art.jpg"}
+          className="absolute top-0 left-0 w-full h-full object-cover rounded-lg brightness-50 dark:brightness-35"
+        />
+      </Card>
+      <Card className="lg:[grid-area:7_/_3_/_8_/_4] backdrop-blur-xl hover:border-amber-500 dark:hover:border-blue-500 border-2 transition-all relative hover:scale-105 lg:py-0 flex items-center justify-center min-w-1/2">
+        <Link
+          href={
+            "https://music.youtube.com/playlist?list=PL13xdb4Vgmv8zMvNXSI0tHed-SQVxJ3uw&si=roMANxDfQuBrWwdG"
+          }
+          className="px-2 z-1 flex items-center justify-center text-gray-100 gap-2 w-full h-full"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span className="text-xl">My playlist</span>
+          <ExternalLinkIcon />
+        </Link>
+        <Image
+          alt={`music/playlist`}
+          priority
+          height={200}
+          width={200}
+          src={"/playlist-art.jpg"}
+          className="absolute top-0 left-0 w-full h-full object-cover rounded-lg brightness-50 dark:brightness-35"
+        />
       </Card>
       <Card className="lg:[grid-area:8_/_3_/_9_/_4] backdrop-blur-xl hover:border-amber-500 dark:hover:border-blue-500 border-2 transition-all relative hover:scale-105 lg:py-0 flex items-center justify-center min-w-1/2">
         <Link
