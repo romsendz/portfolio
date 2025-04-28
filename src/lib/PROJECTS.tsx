@@ -159,7 +159,7 @@ export const PROJECTS = [
       <>
         <p>
           Modern and responsive portfolio website showcasing personal projects
-          and other <i>about me</i> info.
+          and other info about me.
         </p>
       </>
     ),
