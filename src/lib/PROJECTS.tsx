@@ -3,6 +3,43 @@ import Link from "next/link";
 
 export const PROJECTS = [
   {
+    title: `Climasur`,
+    description: (
+      <>
+        <p>
+          A modern, responsive website for Climasur, a spanish-based brand
+          specializing in climate control, heating, and gas solutions for homes.
+        </p>
+        <br />
+        <p>
+          This project delivers a professional online presence for Climasur,
+          highlighting their expertise in air conditioning, heating, and gas
+          installations. The site features a clean, accessible design with a
+          focus on user experience, clear service presentation, and easy contact
+          options.
+          <br />
+          <br />
+          The site includes dynamic navigation, a sticky header, and WhatsApp
+          integration for direct customer communication. Fully responsive, it
+          ensures seamless browsing on all devices.
+        </p>
+      </>
+    ),
+    link: `https://www.climasurinstalaciones.es/`,
+    archived: false,
+    img: `/climasur.jpg`,
+    technologies: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Responsive Design",
+      "Component-based Architecture",
+      "Zod",
+      "React Hook Form",
+    ],
+  },
+  {
     title: `beauty-zone`,
     description: (
       <>
