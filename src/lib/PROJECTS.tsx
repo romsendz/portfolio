@@ -37,6 +37,8 @@ export const PROJECTS = [
       "Component-based Architecture",
       "Zod",
       "React Hook Form",
+      "Resend mail service",
+      "SEO",
     ],
   },
   {
