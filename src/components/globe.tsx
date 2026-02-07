@@ -3,6 +3,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import * as d3 from "d3";
 import clsx from "clsx";
+import { Loader2 } from "lucide-react";
 
 interface WorldFeature {
   type: string;
@@ -24,6 +25,8 @@ const Globe = ({ className: _className }: { className?: string }) => {
   const timerRef = useRef<d3.Timer | null>(null);
   const [worldData, setWorldData] = useState<WorldData | null>(null);
   const resizeTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+
+  const [isRendered, setIsRendered] = useState(false);
 
   const visitedCountries = [
     "Austria",
@@ -63,6 +66,7 @@ const Globe = ({ className: _className }: { className?: string }) => {
     const renderGlobe = () => {
       const mapContainer = mapContainerRef.current;
       if (!mapContainer) return;
+      setIsRendered(false);
 
       // Clean up any previous SVG and timer
       d3.select(mapContainer).selectAll("svg").remove();
@@ -129,6 +133,7 @@ const Globe = ({ className: _className }: { className?: string }) => {
           .selectAll("path")
           .attr("d", (d) => pathGenerator(d as d3.GeoPermissibleObjects));
       }, 200);
+      setIsRendered(true);
     };
 
     // Initial render
@@ -164,6 +169,8 @@ const Globe = ({ className: _className }: { className?: string }) => {
     };
   }, [worldData]);
 
+  const isLoading = !worldData || !isRendered;
+
   return (
     <div
       className={clsx(
@@ -171,7 +178,15 @@ const Globe = ({ className: _className }: { className?: string }) => {
         _className
       )}
     >
-      <div className="w-full h-80 lg:h-[500px]" ref={mapContainerRef}></div>
+      <div className="w-full h-80 lg:h-[500px] relative">
+        <div className="absolute inset-0" ref={mapContainerRef} />
+
+        {isLoading && (
+          <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+            <Loader2 className="h-6 w-6 animate-spin" />
+          </div>
+        )}
+      </div>
     </div>
   );
 };
