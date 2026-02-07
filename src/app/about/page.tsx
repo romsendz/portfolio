@@ -112,14 +112,14 @@ const Page = () => {
                       <CarouselItem key={index} className="self-center">
                         <div className="p-1">
                           <Card>
-                            <CardContent className="flex justify-center align-middle aspect-square p-0">
+                            <CardContent className="relative aspect-square p-0">
                               <Image
-                                alt={`Quiet Storm band ${index + 1}`}
-                                priority
-                                height={200}
-                                width={200}
-                                className="rounded-lg object-contain w-full"
                                 src={`/quiet-storm/${index + 1}.jpg`}
+                                alt={`Quiet Storm band ${index + 1}`}
+                                fill
+                                sizes="(min-width: 1024px) 640px, 90vw"
+                                className="rounded-lg object-contain"
+                                quality={100}
                               />
                             </CardContent>
                           </Card>
@@ -165,14 +165,14 @@ const Page = () => {
                       <CarouselItem key={index} className="self-center">
                         <div className="p-1">
                           <Card>
-                            <CardContent className="flex justify-center align-middle aspect-square p-0">
+                            <CardContent className="relative aspect-square p-0">
                               <Image
-                                alt={`hiking through nature ${index + 1}`}
-                                priority
-                                height={200}
-                                width={200}
-                                className="rounded-lg object-contain w-full"
                                 src={`/hiking-through-nature/${index + 1}.jpg`}
+                                alt={`hiking through nature ${index + 1}`}
+                                fill
+                                sizes="(min-width: 1024px) 640px, 90vw"
+                                className="rounded-lg object-contain"
+                                quality={100}
                               />
                             </CardContent>
                           </Card>
@@ -217,16 +217,16 @@ const Page = () => {
                       <CarouselItem key={index} className="self-center">
                         <div className="p-1">
                           <Card>
-                            <CardContent className="flex justify-center align-middle aspect-square p-0">
+                            <CardContent className="relative aspect-square p-0">
                               <Image
+                                src={`/cl-kyiv-2018/${index + 1}.jpg`}
                                 alt={`2018 UEFA Champions League final. Kyiv, Ukraine R S ${
                                   index + 1
                                 }`}
-                                priority
-                                height={200}
-                                width={200}
-                                className="rounded-lg object-contain w-full"
-                                src={`/cl-kyiv-2018/${index + 1}.jpg`}
+                                fill
+                                sizes="(min-width: 1024px) 640px, 90vw"
+                                className="rounded-lg object-contain"
+                                quality={100}
                               />
                             </CardContent>
                           </Card>
