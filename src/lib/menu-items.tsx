@@ -1,6 +1,7 @@
 import {
-  BookUserIcon,
+  //BookUserIcon,
   BriefcaseBusinessIcon,
+  HandshakeIcon,
   HomeIcon,
   SmileIcon,
 } from "lucide-react";
@@ -43,13 +44,22 @@ export const menuItems: MenuItem[] = [
     iconColor: "text-amber-700",
     newTab: false,
   },
+  // {
+  //   icon: <BookUserIcon className="h-5 w-5" />,
+  //   label: "Résumé",
+  //   href: "/resume.pdf",
+  //   gradient:
+  //     "radial-gradient(circle, rgba(239,68,68,0.15) 0%, rgba(220,38,38,0.06) 50%, rgba(185,28,28,0) 100%)",
+  //   iconColor: "text-red-500",
+  //   newTab: true,
+  // },
   {
-    icon: <BookUserIcon className="h-5 w-5" />,
-    label: "Résumé",
-    href: "/resume.pdf",
+    icon: <HandshakeIcon className="h-5 w-5" />,
+    label: "Contact & Colab",
+    href: "mailto:sendzyuk.r@gmail.com,sendzyuk.r@ukr.net",
     gradient:
       "radial-gradient(circle, rgba(239,68,68,0.15) 0%, rgba(220,38,38,0.06) 50%, rgba(185,28,28,0) 100%)",
     iconColor: "text-red-500",
-    newTab: true,
+    newTab: false,
   },
 ];
