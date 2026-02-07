@@ -66,8 +66,6 @@ const Page = () => {
             myself, my skills, and the projects I&apos;ve poured my heart into.
           </p>
           <br />
-          <p>But frankly, there&apos;s more to me than just lines of code.</p>
-          <br />
           <p>
             I&apos;m a proud{" "}
             <Link
@@ -83,7 +81,6 @@ const Page = () => {
             <span className="bg-gradient-to-b from-[#005BBB] from-60% to-[#928028] to-40% text-transparent bg-clip-text inline-block">
               Ukraine.
             </span>
-            <br />I am an OG soul mixed with a passion for new trends.
           </p>
           <br />
           <p>
@@ -253,11 +250,6 @@ const Page = () => {
           </p>
           <br />
           <p>
-            At the heart of it all, I&apos;m always trying to do my best for my
-            family, my country, and our planet.
-          </p>
-          <br />
-          <p>
             Thanks for reading - and hey, now that we&apos;re friends,
             let&apos;s <Celebration />
           </p>
@@ -327,9 +319,9 @@ const Page = () => {
         </CardHeader>
         <CardContent>
           <ul className="list-disc list-inside text-sm">
+            <li>FT job</li>
             <li>Working on some personal projects</li>
-            {/* <li>Starting a new ft job soon</li> */}
-            <li>Learning German language (A2)</li>
+            <li>Learning German language (B1)</li>
             <li>Open for new opportunities</li>
           </ul>
         </CardContent>
@@ -342,7 +334,7 @@ const Page = () => {
         {/*WIP - remove lg:hidden*/}
         <Link
           href={
-            "https://music.youtube.com/playlist?list=PL13xdb4Vgmv8zMvNXSI0tHed-SQVxJ3uw&si=roMANxDfQuBrWwdG"
+            "https://music.youtube.com/playlist?list=PL13xdb4Vgmv8zMvNXSI0tHed-SQVxJ3uw&si=dSWaVDTJ5KHvJLp4"
           }
           className="px-2 z-1 flex items-center justify-center text-gray-100 gap-2 w-full h-full"
           target="_blank"

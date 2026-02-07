@@ -7,21 +7,15 @@ export const PROJECTS = [
     description: (
       <>
         <p>
-          A modern, responsive website for Climasur, a spanish-based brand
-          specializing in climate control, heating, and gas solutions for homes.
+          A modern, responsive website for Climasur, a Spain-based company
+          specializing in home climate control, heating, and gas solutions.
         </p>
         <br />
         <p>
-          This project delivers a professional online presence for Climasur,
-          highlighting their expertise in air conditioning, heating, and gas
-          installations. The site features a clean, accessible design with a
-          focus on user experience, clear service presentation, and easy contact
-          options.
-          <br />
-          <br />
-          The site includes dynamic navigation, a sticky header, and WhatsApp
-          integration for direct customer communication. Fully responsive, it
-          ensures seamless browsing on all devices.
+          The project focuses on a clean, professional design, clear service
+          presentation, and easy customer contact. It features a sticky header,
+          smooth navigation, WhatsApp integration, and a fully responsive layout
+          for a seamless experience on any device.
         </p>
       </>
     ),
@@ -46,14 +40,13 @@ export const PROJECTS = [
     description: (
       <>
         <p>
-          A simple, but reasonable landing page for a company in the beauty
-          industry.
+          A simple, well-structured landing page for a beauty industry business.
         </p>
         <br />
         <p>
-          This project showcases a clean and responsive design, utilizing HTML,
-          CSS, and SASS for styling, along with JavaScript for interactive
-          elements.
+          Built with HTML, CSS, and SASS, with light JavaScript for
+          interactivity. Fully responsive and focused on clean visuals and
+          usability.
         </p>
       </>
     ),
@@ -100,9 +93,7 @@ export const PROJECTS = [
           with a new design and improved performance. Designed to provide a
           modern, user-friendly platform for the local community to access
           church-related information. Features a CMS-like structure allowing
-          authenticated admins to update content dynamically. Implements
-          NextAuth with credential-based authentication for secure admin access.
-          Fully responsive design ensures accessibility across all devices.
+          authenticated admins to update content dynamically.
         </p>
         <br />
         <p>
@@ -139,8 +130,7 @@ export const PROJECTS = [
     description: (
       <>
         <p>
-          HP World is a fully responsive web application, designed to provide a
-          basic wiki information about the Harry Potter universe. Utilized{" "}
+          HP World is a simple wiki for the Harry Potter universe. Utilized{" "}
           <Link
             href={"https://github.com/fedeperin/potterapi"}
             target="_blank"
@@ -163,15 +153,7 @@ export const PROJECTS = [
         </p>
         <p>
           Includes pages for exploring books, characters, houses, and spells
-          from the Harry Potter universe, with data fetched dynamically from an
-          external API. Powered by React Query for efficient data fetching,
-          caching, and synchronization.
-        </p>
-        <br />
-        <p>
-          The goal of this project was to play around with status-quo tools and
-          features. It served as a playground to explore different tools and
-          approaches.
+          from the Harry Potter universe.
         </p>
       </>
     ),
